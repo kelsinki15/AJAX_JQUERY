@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> minha pagina  </title>
+
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand text-blue ">Consulta cep</a>
+                <div class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Digite o cep" id="cep">
+                  <button class="btn btn-outline-success" type="submit" onclick="consultaCep()">Buscar</button>
+                </div>
+          </nav>
+
+
+          <div class="container cep" style="margin-top:19px;">
+                <div class="row">
+                    <h3 id="titulo_cep">CEP</h3>
+          </div>
+                <div class="row" style="margin-top: 19px;">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Rua</td>
+                                <td id="logradouro"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Bairro</td>
+                                <td id="bairro"></td>
+                            </tr>
+                            <tr>
+                                <td>Município</td>
+                                <td id="localidade"></td>
+                            </tr>
+                            <tr>
+                                <td>UF</td>
+                                <td id="uf"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+    </body>
+</html>
